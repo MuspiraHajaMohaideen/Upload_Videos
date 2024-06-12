@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top YouTube Picks</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../JS/videoGridHandler.js"></script>
+  <script src="../JS/formHandler.js"></script>
+  <link rel="stylesheet" href="../CSS/Style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-con">
+      <img id="youtubeLogo" src="../images/youtube-icon.png" alt="YouTube Logo">
+    </div>
+    <input type="text" class="search-bar" placeholder="Search Top Youtube Picks...">
+    <button id="addVideoBtn">AddVideo</button>
+  </div>
+  <div class="container fade-element con" id="fade-element">
+    <h1 class="htext text-center mb-4">Top YouTube Picks</h1>
+    <main id="fadeid">
+      <div class="video-grid existing-video" data-video-src="https://www.youtube.com/embed/m67-bOpOoPU">
+        <div class="video-row1">
+          <img src="../images/error.jpeg" alt="EMC-Template">
+        </div>
+        <div class="video-row2">
+          <div class="video-content">
+            <div class="video-title">
+              Python Tutorial by Error Makes Clever
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-grid  existing-video" data-video-src="https://www.youtube.com/embed/hTYsf6bdSJ8">
+        <div class="video-row1">
+          <img src="../images/github.jpeg" alt="github-template">
+        </div>
+        <div class="video-row2">
+          <div class="video-content">
+            <div class="video-title">
+              Git & Github by CS In Tamil
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-grid  existing-video"
+        data-video-src="https://www.youtube.com/embed/qGNuTRT4pHM?si=NwtEmdyBKjPVbU4S">
+        <div class="video-row1">
+          <img src="../images/uyarvu-template.jpg" alt="Ennuvathellam-uyarvu-template">
+        </div>
+        <div class="video-row2">
+          <div class="video-content">
+            <div class="video-title">
+              Manam Ennum Maya Devathai by Ennuvathellam Uyarvu
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-grid  existing-video"
+        data-video-src="https://www.youtube.com/embed/K-kWkyUVqhg?si=Vtb5RjIYFfCGsaJA">
+        <div class="video-row1">
+          <img src="../images/curious.jpeg" alt="curious-freak-template">
+        </div>
+        <div class="video-row2">
+          <div class="video-content">
+            <div class="video-title">
+              Stop HTML, CSS, JS Learn This by Curious Freak
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="videoForm">
+    <input type="file" id="thumbnailFile" class="form-control mb-2" accept="image/*" required>
+    <input type="text" id="videoTitle" class="form-control mb-2" placeholder="Enter Video Title" required>
+    <input type="url" id="videoLink" class="form-control mb-2" placeholder="Enter Video Link" required>
+    <button id="submitVideoBtn">Submit</button>
+  </div>
+</body>
+
+</html>

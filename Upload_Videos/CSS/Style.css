@@ -1,0 +1,147 @@
+body {
+  background-color: rgb(162, 168, 189);
+}
+
+.con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+  column-gap: 50px;
+  margin-left: 0px;
+}
+
+.htext {
+  color: white;
+}
+
+.video-grid {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+.video-row1 {
+  height: 150px;
+}
+
+.video-row1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.video-row2 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.channel-picture {
+  width: 40px;
+}
+
+.channel-picture img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.video-content {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.video-title {
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.video-player {
+  width: 800px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+#youtubeLogo {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 150px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbar-con img {
+  width: 140px;
+}
+
+
+.search-bar {
+  width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#addVideoBtn {
+  color: white;
+  background-color: rgb(162, 168, 189);
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none
+}
+
+#videoForm {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#addNewVideoBtn {
+  margin-top: 20px;
+}
+
+.fade-element {
+  transition: opacity 0.5s ease;
+}
+
+#submitVideoBtn {
+  background-color: rgb(162, 168, 189);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+}
